@@ -1,0 +1,173 @@
+/* Design Mentor: Set up your Dark Elegance Color Palette */
+:root {
+    --charcoal: #36454F;
+    --matte-black: #121212;
+    --graphite: #2C2C2C;
+    --deep-gray: #4A4A4A;
+    --bronze: #CD7F32; /* Bronze accent for highlights */
+    --beige: #D2B48C;  /* Warm highlight for text */
+    --text-color: var(--beige);
+    --background-color: var(--matte-black);
+}
+
+/* Expert Web Developer: Simple CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif; /* Sleek sans-serif body text */
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 1rem;
+    /* Design Mentor: Optimize for mobile-first */
+    min-width: 320px; 
+}
+
+/* Typography & Dark Elegance */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Bold serif/geometric header */
+    color: var(--bronze);
+    text-shadow: 0 0 5px rgba(205, 127, 50, 0.3); /* Subtle glow effect */
+}
+
+a {
+    color: var(--bronze);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover, a:focus {
+    color: var(--beige); /* Hover accents in bronze/beige */
+}
+
+/* --- Layout Styles --- */
+.site-header {
+    background: var(--graphite);
+    padding: 1rem;
+    border-bottom: 2px solid var(--deep-gray);
+    /* Expert Web Developer: Simple Flexbox for navigation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style main menu (will be styled for mobile first in JS) */
+#main-menu {
+    list-style: none;
+    padding: 0;
+    display: none; /* Hidden by default on mobile */
+}
+
+/* --- Doctrine Module Styles (Dark Elegance Material) --- */
+.doctrine-module {
+    background: var(--charcoal); /* Matte panels */
+    border: 1px solid var(--deep-gray);
+    padding: 2rem;
+    margin-top: 1.5rem;
+    /* Materials: Brushed surfaces/matte look */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+    position: relative; /* For positioning the button */
+}
+
+/* Style the header and button area */
+.doctrine-module h3 {
+    display: inline-block;
+    margin-right: 1.5rem; /* Space before button */
+}
+
+.collapse-toggle {
+    /* Materials: Matte panels, minimal interaction design */
+    background: none;
+    border: 1px solid var(--deep-gray);
+    color: var(--bronze);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* Interaction: Smooth transitions, hover accents in bronze */
+}
+
+.collapse-toggle:hover {
+    background-color: var(--charcoal);
+    border-color: var(--bronze);
+}
+
+/* Interaction: Change the icon when expanded */
+.collapse-toggle[aria-expanded="true"] .toggle-icon {
+    transform: rotate(45deg); /* Simple visual indicator for open state */
+}
+
+.toggle-icon {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    line-height: 1; /* Keep the icon vertically centered */
+}
+
+/* Styling the content wrapper */
+.content-body {
+    padding-top: 1rem; /* Space between header/toggle and content */
+    border-top: 1px dashed var(--deep-gray);
+    margin-top: 1rem;
+}/* Design Mentor: Minimal, Dark Elegance Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Clean lines */
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid var(--deep-gray); /* Subtle border for structure */
+}
+
+th {
+    background-color: var(--graphite); /* Darker header */
+    color: var(--bronze);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: var(--charcoal); /* Subtle striping for readability */
+}
+
+/* Ensure mobile responsiveness for tables */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Stack on small screens */
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; /* Hide header row */
+    }
+    td {
+        border: none;
+        border-bottom: 1px solid var(--deep-gray);
+        position: relative;
+        padding-left: 50%; 
+    }
+    /* Add labels before the content in table cells */
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        color: var(--bronze);
+    }
+    
+    /* Accessibility Note: To implement the data-label technique fully, you would need to add attributes to the HTML like <td data-label="The Surface">. For now, the block display improves readability on mobile. */
+}
