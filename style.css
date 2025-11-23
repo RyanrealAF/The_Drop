@@ -1,173 +1,145 @@
-/* Design Mentor: Set up your Dark Elegance Color Palette */
-:root {
-    --charcoal: #36454F;
-    --matte-black: #121212;
-    --graphite: #2C2C2C;
-    --deep-gray: #4A4A4A;
-    --bronze: #CD7F32; /* Bronze accent for highlights */
-    --beige: #D2B48C;  /* Warm highlight for text */
-    --text-color: var(--beige);
-    --background-color: var(--matte-black);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyanrealAF - Educational Doctrine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <h1>RyanrealAF Doctrine</h1>
+        <nav aria-label="Main Navigation">
+            <button id="menu-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button>
+            <ul id="main-menu">
+                <li><a href="#module-one">Workspace</a></li>
+                <li><a href="#module-two">Lounge</a></li>
+                <li><a href="#module-three">Branding</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Expert Web Developer: Simple CSS Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    <main id="main-content">
+        <section id="module-one" class="doctrine-module">
+            <h3>The Doctrine of Subtext & Reversal</h3>
+            <button class="collapse-toggle" aria-expanded="false" aria-controls="content-module-1">
+                <span class="toggle-icon">+</span>
+            </button>
 
-html {
-    scroll-behavior: smooth;
-}
+            <div id="content-module-1" class="content-body" hidden>
+                <h4>1. Core Thesis: Communication as Conflict</h4>
+                <p>They lied: communication is not an elegant bridge. In high-stakes environments, the spoken word is a smoke screen. The mission is not to exchange information; the goal is to uncover it (intel).</p>
+                
+                <hr>
+                
+                <h4>2. Doctrine of Subtext: Decoding the Silent Stream</h4>
+                <p>Subtext is the silent stream beneath dialogue, shaped by fear, desire, or unresolved trauma. The words are an illusion; the body language is the truth.</p>
+                
+                <h5>Active Reconnaissance (Reading the Wreckage)</h5>
+                <p>Switch from passive listening to active reconnaissance, hunting the static (silence, eye-darts, shifts). You are looking for the compromise where what they say collides with what they truly mean.</p>
+                
+                <table class="subtext-table">
+                    <thead>
+                        <tr>
+                            <th>The Surface (The Lie)</th>
+                            <th>The Subtext (The Truth)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>"I'm fine, everything's cool."</td>
+                            <td>A shift in cadence, a sudden drop in eye contact.</td>
+                        </tr>
+                        <tr>
+                            <td>A philosophical argument.</td>
+                            <td>A white-knuckled grip on the mug; a test of emotional safety.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <hr>
+                
+                <h4>3. Strategic Reversal: Trauma as Incoming Data</h4>
+                <p>The old strategy, Attrition Avoidance, is a dead-end street/coward's crouch. The Strategic Reversal (SR) Doctrine flips the script: you become the operative, not the target/victim.</p>
+                
+                <h5>Controlled Attrition Acceptance</h5>
+                <p>This is strategic sacrifice. You deliberately accept psychological pressure/step into the fire to force the adversary to expose their whole hand. Your pain/struggle is transformed from punishment/damage into Incoming Data (actionable intelligence).</p>
+                
+                <table class="reversal-table">
+                    <thead>
+                        <tr>
+                            <th>Old Posture (Victim)</th>
+                            <th>New Posture (Operative)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Goal: Minimize Exposure</td>
+                            <td>Goal: Maximize Controlled Exposure</td>
+                        </tr>
+                        <tr>
+                            <td>View of Trauma: A Wound</td>
+                            <td>View of Trauma: A Truth Weaponized</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <hr>
+                
+                <h4>4. The Three Weapons of Reversal</h4>
+                <ol>
+                    <li>**Meticulous Documentation (The Breadcrumb Web):** Every whisper, eye-dart, and attack is collected as your Forensic Record. No emotion, just data.</li>
+                    <li>**Plausible Deniability Inversion:** By presenting the irrefutable truth of the pattern, their shield of plausible deniability becomes the evidence that convicts them. We kill the grey area.</li>
+                    <li>**Automated Accountability (The Ghost):** AI/technology acts as a tireless, emotionless engine for pattern recognition and evidence aggregation. The human remains the curator; the tech is the force multiplier.</li>
+                </ol>
+                
+                <p class="caveat">**Ethical Imperative & Caveat:** The mission is intel, not destruction. Honor the struggle (Rebel Empathy), but enforce accountability for the damage.</p>
+            </div>
+        </section>
 
-body {
-    font-family: sans-serif; /* Sleek sans-serif body text */
-    background: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding: 1rem;
-    /* Design Mentor: Optimize for mobile-first */
-    min-width: 320px; 
-}
+        <section id="module-two" class="doctrine-module">
+            <h3>The Lounge (Reflection & Community)</h3>
+            <button class="collapse-toggle" aria-expanded="false" aria-controls="content-module-2">
+                <span class="toggle-icon">+</span>
+            </button>
 
-/* Typography & Dark Elegance */
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif; /* Bold serif/geometric header */
-    color: var(--bronze);
-    text-shadow: 0 0 5px rgba(205, 127, 50, 0.3); /* Subtle glow effect */
-}
+            <div id="content-module-2" class="content-body" hidden>
+                <h4>Guided Reflections</h4>
+                <p>Space for posts that honor the struggle and lift the fallen. Rebel Empathy must be maintained.</p>
+                
+                <h4>Resource Links</h4>
+                <ul>
+                    <li><a href="#" target="_blank">Resource Guide Link 1</a></li>
+                    <li><a href="#" target="_blank">Resource Guide Link 2</a></li>
+                </ul>
+            </div>
+        </section>
 
-a {
-    color: var(--bronze);
-    text-decoration: none;
-    transition: color 0.3s;
-}
+        <section id="module-three" class="doctrine-module">
+            <h3>Branding (The RyanrealAF Logo)</h3>
+            <button class="collapse-toggle" aria-expanded="false" aria-controls="content-module-3">
+                <span class="toggle-icon">+</span>
+            </button>
 
-a:hover, a:focus {
-    color: var(--beige); /* Hover accents in bronze/beige */
-}
+            <div id="content-module-3" class="content-body" hidden>
+                <h4>The Narrative Anchor</h4>
+                <p>This section anchors the narrative flow, clarifying the mission and brand identity.</p>
+                <div class="logo-display">
+                    <img src="assets/logo.svg" alt="RyanrealAF Logo - The Narrative Anchor" class="site-logo">
+                </div>
+                
+                <h4>The Ethical Imperative</h4>
+                <p>The imperative of exposing systemic manipulation and preventing future harm outweighs the personal risks.</p>
+            </div>
+        </section>
 
-/* --- Layout Styles --- */
-.site-header {
-    background: var(--graphite);
-    padding: 1rem;
-    border-bottom: 2px solid var(--deep-gray);
-    /* Expert Web Developer: Simple Flexbox for navigation */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    </main>
 
-/* Style main menu (will be styled for mobile first in JS) */
-#main-menu {
-    list-style: none;
-    padding: 0;
-    display: none; /* Hidden by default on mobile */
-}
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> RyanrealAF. All Rights Reserved.</p>
+    </footer>
 
-/* --- Doctrine Module Styles (Dark Elegance Material) --- */
-.doctrine-module {
-    background: var(--charcoal); /* Matte panels */
-    border: 1px solid var(--deep-gray);
-    padding: 2rem;
-    margin-top: 1.5rem;
-    /* Materials: Brushed surfaces/matte look */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
-    position: relative; /* For positioning the button */
-}
-
-/* Style the header and button area */
-.doctrine-module h3 {
-    display: inline-block;
-    margin-right: 1.5rem; /* Space before button */
-}
-
-.collapse-toggle {
-    /* Materials: Matte panels, minimal interaction design */
-    background: none;
-    border: 1px solid var(--deep-gray);
-    color: var(--bronze);
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    /* Interaction: Smooth transitions, hover accents in bronze */
-}
-
-.collapse-toggle:hover {
-    background-color: var(--charcoal);
-    border-color: var(--bronze);
-}
-
-/* Interaction: Change the icon when expanded */
-.collapse-toggle[aria-expanded="true"] .toggle-icon {
-    transform: rotate(45deg); /* Simple visual indicator for open state */
-}
-
-.toggle-icon {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
-    line-height: 1; /* Keep the icon vertically centered */
-}
-
-/* Styling the content wrapper */
-.content-body {
-    padding-top: 1rem; /* Space between header/toggle and content */
-    border-top: 1px dashed var(--deep-gray);
-    margin-top: 1rem;
-}/* Design Mentor: Minimal, Dark Elegance Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse; /* Clean lines */
-    margin: 1.5rem 0;
-    font-size: 0.95rem;
-    color: var(--text-color);
-}
-
-th, td {
-    padding: 1rem;
-    text-align: left;
-    border: 1px solid var(--deep-gray); /* Subtle border for structure */
-}
-
-th {
-    background-color: var(--graphite); /* Darker header */
-    color: var(--bronze);
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-    background-color: var(--charcoal); /* Subtle striping for readability */
-}
-
-/* Ensure mobile responsiveness for tables */
-@media (max-width: 600px) {
-    table, thead, tbody, th, td, tr {
-        display: block; /* Stack on small screens */
-    }
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px; /* Hide header row */
-    }
-    td {
-        border: none;
-        border-bottom: 1px solid var(--deep-gray);
-        position: relative;
-        padding-left: 50%; 
-    }
-    /* Add labels before the content in table cells */
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 6px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
-        font-weight: bold;
-        color: var(--bronze);
-    }
-    
-    /* Accessibility Note: To implement the data-label technique fully, you would need to add attributes to the HTML like <td data-label="The Surface">. For now, the block display improves readability on mobile. */
-}
+    <script src="script.js"></script>
+</body>
+</html>
