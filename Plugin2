@@ -1,0 +1,34 @@
+/**
+ * @fileoverview Configuration file for ESLint.
+ * This file sets up linting rules to enforce code quality and best practices.
+ * The AirBnB base configuration is used as a foundation.
+ */
+
+module.exports = {
+  // Use the recommended parser settings for modern JavaScript
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+  },
+  // Extend the widely-used AirBnB style guide for best practices
+  extends: [
+    'airbnb-base',
+  ],
+  // Define global variables often used in web development (like 'document', 'fetch')
+  env: {
+    browser: true,
+    node: true,
+    es2020: true,
+  },
+  // Custom rules override settings from the extended configurations
+  rules: {
+    // Allows the use of console logging for debugging purposes (useful for novices)
+    'no-console': 'off',
+    // Allows object destructuring to be skipped
+    'prefer-destructuring': 'off',
+    // Sets max line length slightly higher for better readability of complex lines
+    'max-len': ['error', { 'code': 100, 'ignoreUrls': true }],
+    // Allows the use of default exports (useful for React/Angular components)
+    'import/prefer-default-export': 'off',
+  },
+};
